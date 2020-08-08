@@ -11,14 +11,12 @@ const Login = () => {
 
   if (login === true) return <Navigate to="/conta" />;
   return (
-    <h1>
-      <Routes>
-        <Route path="/" element={<LoginForm />} />
-        <Route path="criar" element={<LoginCreate />} />
-        <Route path="perdeu" element={<LoginPasswordLost />} />
-        <Route path="resetar" element={<LoginPasswordReset />} />
-      </Routes>
-    </h1>
+    <Routes>
+      <Route path="/" element={<LoginForm />} />
+      <Route path="criar" element={<LoginCreate />} />
+      <Route path="perdeu" element={<LoginPasswordLost />} />
+      <Route path="resetar" element={<LoginPasswordReset />} />
+    </Routes>
   );
 };
 
